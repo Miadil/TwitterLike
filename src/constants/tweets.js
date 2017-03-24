@@ -9,7 +9,7 @@ const tweets = [{
   avatar: 'https://pbs.twimg.com/profile_images/831556351310585856/P632Y3-t_400x400.jpg',
   username: 'Melroune',
   fullname: 'Melroune Lufking',
-  content: 'bienvenu, sur ma derniere création un petit site façon twiter pour bien apprendre a maitriser React Js',
+  content: 'bienvenu, sur ma derniere création un petit site façon twiter pour bien façon twiter pour bien façon twiter pour bien façon twiter pour bien façon twiter pour  façon twiter pour bien façon twiter pour bien façon twiter pour bien façon twiter pour bienbien façon twiter pour bien apprendre a maitriser React Js',
   date: '19/03/2017'
 },
 {
@@ -23,7 +23,7 @@ const tweets = [{
   avatar: 'https://pbs.twimg.com/profile_images/700756022713946112/LFzBFpv4_400x400.jpg',
   username: 'Hikkary',
   fullname: 'Hikkary milk',
-  content: 'Jésus (PSL) a recommandé : « Vous n’atteindrez jamais ce que vous aimez sans que vous ne surmontiez avec patience ce que vous détestez. »?',
+  content: 'Jésus (PSL) a recommandé : « Vous n’atteindirez jamais ce que vous aimez sans que vous ne surmontiez avec patience ce que vous détestez. »?',
   date: '17/03/2017'
 }];
 

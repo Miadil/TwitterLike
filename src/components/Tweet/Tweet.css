@@ -1,0 +1,32 @@
+.conttweet{
+  margin: auto;
+  width: 700px;
+}
+.tweet{
+  margin: 5px;
+  background-color: white;
+  border: 1px solid #A8A8A8;
+  border-radius: 5px;
+}
+.tweet:hover{
+  background-color: #F5F8FA;
+}
+.avatar{
+  display:inline-block;
+}
+.avatar > img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.data{
+  vertical-align: top;
+  display: inline-block;
+  width: 470px;
+  height: 100%;
+  margin: 5px;
+}
+.data > .content > p {
+  margin: 5px 0 5px 0;
+}
