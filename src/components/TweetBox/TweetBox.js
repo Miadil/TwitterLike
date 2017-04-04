@@ -1,10 +1,14 @@
 //statefull
 
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 import './TweetBox.css';
 
 class Tweetbox extends Component {
+  static propTypes = {
+    publish: PropTypes.func.isRequired,
+  };
+
   state = {
     value: '',
   };
@@ -15,15 +19,17 @@ class Tweetbox extends Component {
 
   handelSubmit = () => {
     const { value } = this.state;
+    const { publish } = this.props;
+    
     if(value.length && value.length <= 140){
         // publier
-        
+        publish(value);
+
         this.setState({value: ''});
     }
   };
   render(){
     const { value } = this.state;
-
     return (
         <div className="tweetbox">
           <textarea

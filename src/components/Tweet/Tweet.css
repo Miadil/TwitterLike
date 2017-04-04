@@ -45,3 +45,6 @@
 .date {
   font-style: italic;
 }
+.trash {
+     cursor:  pointer;
+}
