@@ -1,6 +1,10 @@
 import React , { Component, PropTypes } from 'react';
 import FontAwesome from 'react-fontawesome';
+import moment from 'moment';
+
 import './Tweet.css';
+
+// import { highlightedstr } from '../../helpers';
 // const Tweet = props => ( {props.avatar} );
 // pour aceder au proprieter en es6  on destructure le compo
 class Tweet extends Component {
@@ -13,6 +17,9 @@ class Tweet extends Component {
     remove: PropTypes.func.isRequired,
   };
 
+  static defaultProps = {
+    date:moment().format('DD/MM/YYYY'),
+  };
   state  = {
     isFocus:false,
   };

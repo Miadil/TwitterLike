@@ -13,14 +13,14 @@ class Tweetbox extends Component {
     value: '',
   };
 
-  handleChange = ({target : { value } }) => {
+  handleChange = ({target : { value } }) => { //des qu'un changement est operer dans textarea
       this.setState({ value: value});
   };
 
-  handelSubmit = () => {
+  handelSubmit = () => { //si on envois un tweets
     const { value } = this.state;
     const { publish } = this.props;
-    
+
     if(value.length && value.length <= 140){
         // publier
         publish(value);
@@ -28,6 +28,11 @@ class Tweetbox extends Component {
         this.setState({value: ''});
     }
   };
+
+  handelFocus = ( {type} ) => {
+    this._textarea.placeholder = type === 'focus' ? ' ' : "Composez votre tweet";
+  };
+
   render(){
     const { value } = this.state;
     return (
@@ -38,6 +43,9 @@ class Tweetbox extends Component {
             value={value}
             onChange={this.handleChange}
             className={value.length > 140 && 'alert'}
+            ref={t => this._textarea = t}//on declare un ref pour pouvoir accer au placeholder
+            onFocus={this.handelFocus}
+            onBlur={this.handelFocus}
           />
           <div className="action">
             <span className="count">{140 - value.length}</span>
