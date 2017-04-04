@@ -4,7 +4,7 @@ import moment from 'moment';
 
 import './Tweet.css';
 
-// import { highlightedstr } from '../../helpers';
+import { highlightedStr } from '../../helpers/prase';
 // const Tweet = props => ( {props.avatar} );
 // pour aceder au proprieter en es6  on destructure le compo
 class Tweet extends Component {
@@ -52,7 +52,7 @@ class Tweet extends Component {
                     )}
                    </div>
                 <div className="content">
-                    <p>{ content }</p>
+                    <p>{ highlightedStr(content) }</p>
                 </div>
             </div>
         </div>
