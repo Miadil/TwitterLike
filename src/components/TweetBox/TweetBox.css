@@ -1,0 +1,61 @@
+.tweetbox{
+  margin: auto;
+  padding: 5px 5px 0px 5px;
+  width: 98.5%;
+ background-color: #E8F5FD;
+text-align: center;
+box-shadow: 0px 0px 1px 0px #46b6fc;
+border-radius: 5px;
+padding: 5px;
+}
+
+textarea {
+decoration: none;
+outline: none;
+padding: 5px;
+  margin: 5px;
+  width: 96%;
+  border-color: #E8F5FD;
+border-radius: 5px;
+resize: none;
+}
+textarea {
+    border-color: #46b6fc;
+}
+.action{
+  color: gray;
+  font-size: 0.8em;
+  margin: -4px 15px;
+  text-align: right;
+}
+.alert {
+  border-color:  red;
+}
+button {
+  margin: 5px 0px 5px 15px;
+   /*background-color: #16a9ff;*/
+   border-radius: 5px;
+   border: none;
+   color: white;
+   padding: 10px 22px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+}
+button:enabled{
+  margin: 5px 0px 5px 15px;
+   background-color: #16a9ff;
+   border-radius: 5px;
+   border: none;
+   color: white;
+   padding: 10px 22px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   cursor:  pointer;
+}
+button:hover:enabled{
+  background-color: #54c0ff;
+}
